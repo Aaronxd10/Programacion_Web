@@ -1,7 +1,8 @@
 /* Define variables para colores y propiedades */
 :root {
-  --background-color: linear-gradient(45deg, #f9f3ec, #a4d8cf); /* Fondo con degradado */
+  --background-color: #fff; /* Fondo con degradado */
   --header-color: #014c40; /* Color de fondo del encabezado */
+  --footer-color: linear-gradient(45deg, #ff0000, #990000); /* Footer con degradado rojo */
   --text-color: #fff; /* Color de texto */
   --font-size: 16px; /* Tamaño de fuente */
 }
@@ -18,15 +19,21 @@ body {
 
 /* Estilos para el encabezado de la página */
 header {
-  text-align: center; /* Centra el contenido del encabezado horizontalmente */
+  text-align:center; /* Centra el contenido del encabezado horizontalmente */
   background: var(--header-color); /* Usa el color de fondo del encabezado definido en las variables */
-  padding: 1rem; /* Espaciado interior del encabezado */
-  display: -ms-inline-flexbox; /* Usa el modelo de caja flexible para el contenido del encabezado */
-  justify-content: space-between; /* Espacia los elementos del encabezado */
-  align-items: center; /* Centra verticalmente los elementos del encabezado */
+  margin-bottom: 60px; /* Agrega margen en la parte inferior del header */
   transition: background-color 0.3s; /* Aplica una transición al color de fondo */
 }
-
+/* Estilos para el pie de página */
+footer {
+  justify-content: space-evenly; /* Distribuye los elementos del pie de página de manera uniforme */
+  background: var(--footer-color); /* Usa el color de fondo del encabezado definido en las variables */
+  margin-top: 40px; /* Agrega margen en la parte superior del footer */
+  margin-bottom: 20px; /* Agrega margen en la parte inferior del footer */
+  display:flex; /* Usa el modelo de caja flexible para el pie de página */
+  color: var(--text-color); /* Usa el color de texto definido en las variables */
+  transition: background-color 0.3s; /* Aplica una transición al color de fondo */
+}
 /* Estilos para el logotipo en el encabezado */
 .logo {
   margin-bottom: 1rem; /* Espaciado inferior del logotipo */
@@ -35,37 +42,40 @@ header {
 .logo img {
   width: 250px; /* Ancho de la imagen del logotipo */
   height: 80px; /* Alto de la imagen del logotipo */
-  display: block; /* Convierte la imagen en un elemento de bloque */
-  margin: 0 auto; /* Centra la imagen horizontalmente */
 }
+/* Cambiar el tamaño de los íconos en los elementos <li> */
+li a i.fa-solid.fa-percent,
+li a i.fas.fa-utensils,
+li a i.fas.fa-map-marker-alt, 
+li a i.fa-solid.fa-house {
+  font-size: 30px; /* Cambia el tamaño de los íconos a 24px (ajusta el tamaño según lo necesites) */
+}
+
 
 /* Estilos para la navegación en el encabezado */
 nav ul {
-  list-style-type: none; /* Quita los marcadores de lista */
-  margin: 0;
-  margin-top: auto;
-  padding: 0;
-  display: inline; /* Hace que los elementos de la lista se muestren en línea */
-  flex-direction: row; /* Establece la dirección de los elementos en fila */
   align-items: center; /* Centra verticalmente los elementos de la lista */
 }
 
 nav ul li {
-  margin-right: 2rem; /* Espaciado derecho entre elementos de lista */
+  margin-right: 2rem; /* Espaciado derecho entre iconos */
   display: inline; /* Muestra los elementos de lista en línea */
 }
 
 /* Estilos para los enlaces de navegación */
 nav a {
-  margin-left: 15px; /* Espaciado izquierdo entre enlaces */
+  /*margin-left: 15px; /* Espaciado izquierdo entre enlaces */
   color: var(--text-color); /* Usa el color de texto definido en las variables */
   text-decoration: none; /* Quita la decoración de subrayado en los enlaces */
   font-size: 1rem; /* Tamaño de fuente de los enlaces */
   transition: color 0.3s; /* Aplica una transición al color del texto */
+  margin-bottom: 15px; /* Agrega margen en la parte inferior de la lista */
+
 }
 
 nav a:hover {
-  color: #984d4d; /* Cambia el color del texto al hacer hover */
+  background-color: #ffffff; /* Cambia el color de fondo al hacer hover */
+  color: #063e30; /* Cambia el color del texto al hacer hover */
 }
 
 /* Estilos para el contenido principal */
@@ -128,16 +138,6 @@ nav a:hover {
 
 #next-slide {
   right: 10px; /* Posición derecha del botón siguiente */
-}
-
-/* Estilos para el pie de página */
-footer {
-  background: var(--header-color); /* Usa el color de fondo del encabezado definido en las variables */
-  padding: 1rem; /* Espaciado interior del pie de página */
-  display: flex; /* Usa el modelo de caja flexible para el pie de página */
-  justify-content: space-between; /* Espacia los elementos del pie de página */
-  color: var(--text-color); /* Usa el color de texto definido en las variables */
-  transition: background-color 0.3s; /* Aplica una transición al color de fondo */
 }
 
 /* Estilos para los íconos de redes sociales en el pie de página */
