@@ -1,0 +1,34 @@
+/* Estilo para las promociones en lista horizontal */
+.promociones {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap:wrap-reverse; /* Evita que las promociones se desborden a otra línea */
+  overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+  background-color: #d81a1a; /* Color de fondo rojo */
+  padding: 10px 0; /* Espacio interno */
+}
+
+.promociones .promocion {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-right: 10px; /* Espacio entre las promociones */
+}
+
+.promociones .promocion:last-child {
+  margin-right: 0; /* Elimina el espacio después de la última promoción */
+}
+
+.promociones .promocion h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.promociones .promocion p {
+  margin-bottom: 10px;
+}
+
+.promociones .promocion .precio {
+  font-size: 18px;
+  font-weight: bold;
+}
