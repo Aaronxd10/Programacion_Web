@@ -12,7 +12,7 @@ h2 {
   width: 100%;
 }
 
-.promocion {
+.menu {
   width: 300px; /* Ajusta el ancho según tus necesidades */
   margin: 10px;
   padding: 15px;
@@ -21,19 +21,19 @@ h2 {
   transition: transform 0.3s, color 0.3s;
 }
 
-.promocion:hover {
+.menu:hover {
   transform: scale(1.1);
   color: #FF5733;
 }
 
-.promocion img {
+.menu img {
   width: 100%;
   height: auto;
 }
 
 /* Asegura que el ajuste de tamaño se aplique correctamente en pantallas pequeñas */
 @media (max-width: 768px) {
-  .promocion {
+  .menu {
     width: calc(100% - 20px);
   }
 }
