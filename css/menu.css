@@ -12,6 +12,16 @@ h2 {
   width: 100%;
 }
 
+h3 {
+  text-align: center;
+}
+
+.menu-category {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .menu {
   width: 300px; /* Ajusta el ancho según tus necesidades */
   margin: 10px;
@@ -34,6 +44,6 @@ h2 {
 /* Asegura que el ajuste de tamaño se aplique correctamente en pantallas pequeñas */
 @media (max-width: 768px) {
   .menu {
-    width: calc(100% - 20px);
+    width: calc(50% - 20px); /* Mostrar dos elementos por fila en pantallas pequeñas */
   }
 }
