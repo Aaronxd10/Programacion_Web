@@ -1,37 +1,53 @@
 /* Define variables para colores y propiedades */
 :root {
-  --background-color: #fff; /* Fondo con degradado */
-  --header-color: #014c3f; /* Color de fondo del encabezado */
-  --footer-color: linear-gradient(45deg, #ff0000, #990000); /* Footer con degradado rojo */
-  --text-color: #fff; /* Color de texto */
-  --font-size: 16px; /* Tamaño de fuente */
+  --background-color: #fff;
+  /* Fondo con degradado */
+  --header-color: #014c3f;
+  /* Color de fondo del encabezado */
+  --footer-color: linear-gradient(45deg, #ff0000, #990000);
+  /* Footer con degradado rojo */
+  --text-color: #fff;
+  /* Color de texto */
+  --font-size: 16px;
+  /* Tamaño de fuente */
 }
 
 /* Estilos generales para el cuerpo de la página */
 body {
-  text-align: center; /* Centra el texto horizontalmente */
-  font-family: sans-serif; /* Fuente de texto predeterminada */
-  background: var(--background-color); /* Usa el fondo con degradado definido en las variables */
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  font-family: sans-serif;
+  /* Fuente de texto predeterminada */
+  background: var(--background-color);
+  /* Usa el fondo con degradado definido en las variables */
   margin: 0;
   padding: 0;
-  font-size: var(--font-size); /* Usa el tamaño de fuente definido en las variables */
+  font-size: var(--font-size);
+  /* Usa el tamaño de fuente definido en las variables */
+  margin-bottom: 80px;
 }
 
 /* Estilos para el encabezado de la página */
 header {
-  text-align:center; /* Centra el contenido del encabezado horizontalmente */
-  background: var(--header-color); /* Usa el color de fondo del encabezado definido en las variables */
-  margin-bottom: 60px; /* Agrega margen en la parte inferior del header */
-  transition: background-color 0.3s; /* Aplica una transición al color de fondo */
+  text-align: center;
+  /* Centra el contenido del encabezado horizontalmente */
+  background: var(--header-color);
+  /* Usa el color de fondo del encabezado definido en las variables */
+  margin-bottom: 60px;
+  /* Agrega margen en la parte inferior del header */
+  transition: background-color 0.3s;
+  /* Aplica una transición al color de fondo */
 }
+
 .logo {
-  margin-bottom: 1rem; /* Espaciado inferior del logotipo */
+  margin-bottom: 1rem;
+  /* Espaciado inferior del logotipo */
 }
 
 /* Cambiar el tamaño de los íconos en los elementos <li> */
 li a i.fa-solid.fa-percent,
 li a i.fas.fa-utensils,
-li a i.fas.fa-map-marker-alt, 
+li a i.fas.fa-map-marker-alt,
 li a i.fa-solid.fa-house {
   /*font-size: 30px; /* Cambia el tamaño de los íconos a 24px (ajusta el tamaño según lo necesites) */
   display: block;
@@ -39,139 +55,342 @@ li a i.fa-solid.fa-house {
 
 /* Estilos para la navegación en el encabezado */
 nav ul {
-  display: flex; /* Usa el modelo de caja flexible para los elementos de lista */
-  justify-content: center; /* Centra horizontalmente los elementos de lista */
-  list-style: none; /* Quita los estilos de la lista */
+  display: flex;
+  /* Usa el modelo de caja flexible para los elementos de lista */
+  justify-content: center;
+  /* Centra horizontalmente los elementos de lista */
+  list-style: none;
+  /* Quita los estilos de la lista */
   padding: 0;
 }
 
 nav ul li {
-  margin-right: 20px; /* Espaciado derecho entre elementos de la lista */
+  margin-right: 20px;
+  /* Espaciado derecho entre elementos de la lista */
 }
 
 nav a {
-  color: var(--text-color); /* Usa el color de texto definido en las variables */
-  text-decoration: none; /* Quita la decoración de subrayado en los enlaces */
-  font-size: 1rem; /* Tamaño de fuente de los enlaces */
-  transition: color 0.3s; /* Aplica una transición al color del texto */
-  margin-bottom: 15px; /* Agrega margen en la parte inferior de la lista */
+  color: var(--text-color);
+  /* Usa el color de texto definido en las variables */
+  text-decoration: none;
+  /* Quita la decoración de subrayado en los enlaces */
+  font-size: 1rem;
+  /* Tamaño de fuente de los enlaces */
+  transition: color 0.3s;
+  /* Aplica una transición al color del texto */
+  margin-bottom: 15px;
+  /* Agrega margen en la parte inferior de la lista */
 }
 
 nav a:hover {
-  background-color:#cd6363 ; /* Cambia el color de fondo al hacer hover */
-  color: #063e30; /* Cambia el color del texto al hacer hover */
+  background-color: #cd6363;
+  /* Cambia el color de fondo al hacer hover */
+  color: #063e30;
+  /* Cambia el color del texto al hacer hover */
 }
 
 /* Estilos para el contenido principal */
 main {
-  padding: 2rem; /* Espaciado interior del contenido principal */
-  text-align: center; /* Centra el texto horizontalmente */
+  padding: 2rem;
+  /* Espaciado interior del contenido principal */
+  text-align: center;
+  /* Centra el texto horizontalmente */
 }
 
 /* Estilos para el carrusel de imágenes */
 .carousel {
-  width: 100%; /* Ancho del carrusel al 100% */
-  margin: 0 auto; /* Centra el carrusel horizontalmente */
-  position: relative; /* Establece la posición relativa para el carrusel */
-  max-width: 1200px; /* Ancho máximo del carrusel */
+  width: 100%;
+  /* Ancho del carrusel al 100% */
+  margin: 0 auto;
+  /* Centra el carrusel horizontalmente */
+  position: relative;
+  /* Establece la posición relativa para el carrusel */
+  max-width: 1200px;
+  /* Ancho máximo del carrusel */
 }
 
 /* Estilos para las diapositivas del carrusel */
 .slide {
-  display: none; /* Oculta las diapositivas por defecto */
-  width: 100%; /* Ancho de las diapositivas */
-  position: relative; /* Establece la posición relativa para las diapositivas */
+  display: none;
+  /* Oculta las diapositivas por defecto */
+  width: 100%;
+  /* Ancho de las diapositivas */
+  position: relative;
+  /* Establece la posición relativa para las diapositivas */
 }
 
 /* Estilos para las imágenes en las diapositivas */
 .slide img {
-  width: 100%; /* Ancho de las imágenes al 100% */
-  height: auto; /* Altura automática para mantener la proporción */
-  box-shadow: 0 0 10px rgba(206, 223, 10, 0.2); /* Agrega una sombra a las imágenes */
+  width: 100%;
+  /* Ancho de las imágenes al 100% */
+  height: auto;
+  /* Altura automática para mantener la proporción */
+  box-shadow: 0 0 10px rgba(206, 223, 10, 0.2);
+  /* Agrega una sombra a las imágenes */
 }
 
 /* Estilos para la navegación del carrusel */
 .carousel-nav {
-  position: absolute; /* Establece la posición absoluta para la navegación */
-  top: 50%; /* Centra verticalmente la navegación */
-  transform: translateY(-50%); /* Alinea la navegación verticalmente */
-  width: 100%; /* Ancho del área de navegación */
-  text-align: center; /* Centra el texto horizontalmente */
+  position: absolute;
+  /* Establece la posición absoluta para la navegación */
+  top: 50%;
+  /* Centra verticalmente la navegación */
+  transform: translateY(-50%);
+  /* Alinea la navegación verticalmente */
+  width: 100%;
+  /* Ancho del área de navegación */
+  text-align: center;
+  /* Centra el texto horizontalmente */
 }
 
 /* Estilos para los botones de navegación del carrusel */
 .carousel-nav button {
-  background:none; /* Color de fondo de los botones */
-  border: none; /* Quita los bordes de los botones */
-  font-size: 24px; /* Tamaño de fuente de los botones */
-  color: #014c3f; /* Color de texto de los botones */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
-  position: absolute; /* Establece la posición absoluta para los botones */
-  top: 50%; /* Centra verticalmente los botones */
-  transform: translateY(-50%); /* Alinea los botones verticalmente */
-  transition: background-color 0.3s, transform 0.3s; /* Aplica transiciones de color y posición */
+  background: none;
+  /* Color de fondo de los botones */
+  border: none;
+  /* Quita los bordes de los botones */
+  font-size: 24px;
+  /* Tamaño de fuente de los botones */
+  color: #014c3f;
+  /* Color de texto de los botones */
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima */
+  position: absolute;
+  /* Establece la posición absoluta para los botones */
+  top: 50%;
+  /* Centra verticalmente los botones */
+  transform: translateY(-50%);
+  /* Alinea los botones verticalmente */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Aplica transiciones de color y posición */
 }
 
 .carousel-nav button:hover {
-  background: #c9dfd7; /* Cambia el color de fondo al hacer hover */
+  background: #c9dfd7;
+  /* Cambia el color de fondo al hacer hover */
 }
 
 /* Estilos para los botones de navegación previos y siguientes */
 #prev-slide {
-  left: 10px; /* Posición izquierda del botón anterior */
+  left: 10px;
+  /* Posición izquierda del botón anterior */
 }
 
 #next-slide {
-  right: 10px; /* Posición derecha del botón siguiente */
+  right: 10px;
+  /* Posición derecha del botón siguiente */
 }
 
 /* Estilos para el pie de página */
 footer {
-  background: var(--footer-color); /* Usa el color de fondo del encabezado definido en las variables */
-  margin-top: 60px; /* Agrega margen en la parte superior del footer */
-  margin-bottom: 60px; /* Agrega margen en la parte inferior del footer */
-  color: var(--text-color); /* Usa el color de texto definido en las variables */
-  transition: background-color 0.3s; /* Aplica una transición al color de fondo */
-  padding: 2rem 0; /* Añade relleno superior e inferior */
-  text-align: center; /* Centra el texto horizontalmente */
+  background: var(--footer-color);
+  /* Usa el color de fondo del encabezado definido en las variables */
+  margin-top: 90px;
+  /* Agrega margen en la parte superior del footer */
+  margin-bottom: 50px;
+  /* Agrega margen en la parte inferior del footer */
+  color: var(--text-color);
+  /* Usa el color de texto definido en las variables */
+  transition: background-color 0.3s;
+  /* Aplica una transición al color de fondo */
+  padding: 2rem 0;
+  /* Añade relleno superior e inferior */
+  text-align: center;
+  /* Centra el texto horizontalmente */
 }
 
 /* Estilos para los íconos de redes sociales en el pie de página */
 .redes a {
-  text-decoration: none; /* Quita la decoración de subrayado en los enlaces */
-  padding: 1rem; /* Espaciado interior de los enlaces */
-  font-size: 5rem; /* Tamaño de fuente de los enlaces */
-  transition: background-color 0.3s, color 0.3s; /* Aplica transiciones a color y posición */
+  text-decoration: none;
+  /* Quita la decoración de subrayado en los enlaces */
+  padding: 1rem;
+  /* Espaciado interior de los enlaces */
+  font-size: 5rem;
+  /* Tamaño de fuente de los enlaces */
+  transition: background-color 0.3s, color 0.3s;
+  /* Aplica transiciones a color y posición */
 }
 
 .redes a:hover {
-  background-color: #03462f; /* Cambia el color de fondo al hacer hover */
-  color: #fff; /* Cambia el color del texto al hacer hover */
+  background-color: #03462f;
+  /* Cambia el color de fondo al hacer hover */
+  color: #fff;
+  /* Cambia el color del texto al hacer hover */
 }
 
 /* Estilos para el logotipo en el pie de página */
 .logo_footer {
-  padding: 2.5rem; /* Espaciado interior del logotipo */
+  padding: 2.5rem;
+  /* Espaciado interior del logotipo */
 }
 
 /* Estilos para los íconos de redes sociales en el pie de página */
 .social-link i.fab.fa-facebook,
 .social-link i.fab.fa-twitter,
 .social-link i.fab.fa-instagram {
-  color: #fff; /* Cambia el color de los íconos de redes sociales */
-  font-size: 24px; /* Cambia el tamaño de los íconos de redes sociales */
+  color: #fff;
+  /* Cambia el color de los íconos de redes sociales */
+  font-size: 24px;
+  /* Cambia el tamaño de los íconos de redes sociales */
 }
 
 /* Estilo para los íconos */
 li a {
-  display: inline-flex; /* Usar un modelo de caja flexible */
-  flex-direction: column; /* Dirección de los elementos en fila */
-  align-items: center; /* Centrar verticalmente los elementos */
-  text-decoration: none; /* Quitar decoración de enlace (subrayado) */
-  margin-right: 20px; /* Espacio entre elementos */
+  display: inline-flex;
+  /* Usar un modelo de caja flexible */
+  flex-direction: column;
+  /* Dirección de los elementos en fila */
+  align-items: center;
+  /* Centrar verticalmente los elementos */
+  text-decoration: none;
+  /* Quitar decoración de enlace (subrayado) */
+  margin-right: 20px;
+  /* Espacio entre elementos */
 }
 
 /* Estilo para los íconos de FontAwesome */
 li a i {
-  margin-right: center; /* Sin espacio entre el ícono y el texto */
+  margin-right: center;
+  /* Sin espacio entre el ícono y el texto */
+}
+
+.nuestra-tradicion {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.seccion {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.cajas {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ubicaciones {
+  margin-top: 150px;
+  margin-bottom: 80px;
+
+}
+
+/* Estilos para las cajas */
+.cajas a {
+  text-decoration: none;
+  /* Elimina el subrayado del enlace */
+  color: #000;
+  /* Cambia el color del texto a negro (puedes ajustar el color según tus preferencias) */
+  transition: color 0.3s;
+  /* Agrega una transición suave para el cambio de color */
+}
+
+/* Estilos para las cajas */
+.cajas .caja {
+  overflow: hidden;
+  /* Oculta el contenido que excede el tamaño de la caja */
+  position: relative;
+  /* Establece la posición relativa para posicionar el contenido */
+  transition: transform 0.3s;
+  /* Agrega una transición suave para el efecto de zoom */
+}
+
+/* Efecto de zoom al pasar el mouse sobre las cajas */
+.cajas .caja:hover {
+  transform: scale(1.1);
+  /* Aplica un zoom al 110% al pasar el mouse */
+}
+
+/* Estilos para las imágenes dentro de las cajas */
+.cajas img {
+  max-width: 100%;
+  /* Asegura que la imagen no supere el ancho de su contenedor */
+  transition: transform 0.3s;
+  /* Agrega una transición suave para el efecto de zoom */
+}
+
+/* Estilos para el texto dentro de las cajas */
+.cajas p {
+  position: absolute;
+  /* Establece la posición absoluta */
+  top: 0;
+  /* Coloca el texto en la parte superior */
+  left: 0;
+  /* Coloca el texto en la parte izquierda */
+  width: 100%;
+  /* Ocupa el ancho completo de la caja */
+  background: rgba(255, 255, 255, 0.7);
+  /* Fondo semi-transparente para mejorar la legibilidad */
+  padding: 10px;
+  /* Añade un pequeño espacio alrededor del texto */
+  margin: 0;
+  /* Elimina el margen predeterminado */
+  transition: background 0.3s;
+  /* Agrega una transición suave para el cambio de fondo */
+}
+
+/* Estilos para el texto al pasar el mouse sobre las cajas */
+.cajas .caja:hover p {
+  background: rgba(255, 255, 255, 0);
+  /* Hace el fondo completamente transparente al pasar el mouse */
+}
+
+/* Estilos para el botón "Como llegar" */
+button {
+  cursor: pointer;
+  padding: 8px 15%;
+  /* Ajusta el ancho para abarcar todo el tamaño del texto */
+  font-size: 20px;
+  /* Ajusta el tamaño del texto */
+  background-color: #4caf50;
+  /* Color verde */
+  color: #fff;
+  border: none;
+  position: relative;
+  border-radius: 10px;
+  /* Agrega esquinas redondas */
+  transition: padding 0.3s ease;
+  /* Agrega una transición para el desplazamiento del texto */
+}
+
+button:hover {
+  background-color: #45a049;
+  /* Cambia el color al pasar el mouse */
+  padding-right: 5%;
+  /* Ajusta el desplazamiento del texto al pasar el mouse */
+}
+
+button:before {
+  content: '\1F4CD';
+  /* Código Unicode para el icono de coche */
+  font-size: 24px;
+  /* Ajusta el tamaño del icono */
+  opacity: 0;
+  /* Inicialmente, establece la opacidad en 0 para que no sea visible */
+  position: absolute;
+  /* Absoluto para posicionar el icono en relación con el botón */
+  top: 40%;
+  /* Coloca el icono a la mitad vertical del botón */
+  left: 20%;
+  /* Coloca el icono a la izquierda del botón */
+  transform: translateY(-50%);
+  /* Ajusta para centrar verticalmente */
+  transition: opacity 0.3s ease;
+  /* Agrega una transición suave para la opacidad */
+}
+
+button:hover:before {
+  opacity: 1;
+  /* Hace que el icono sea visible al pasar el mouse */
+}
+
+/* Animación fadein */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
