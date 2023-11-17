@@ -1,0 +1,154 @@
+/* Estilos para el contenedor de la ubicación */
+.col-lg-6 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para la información de la ubicación */
+.ubicacion-info {
+  flex: 0 0 100%; /* Ocupa el 50% del ancho en pantallas medianas y grandes */
+  max-width: 100%;
+  margin-right: 20px; /* Ajusta el margen entre la información y el mapa */
+}
+
+/* Estilos para el mapa */
+.embed-responsive-16by9 {
+  flex: 0 0 100%; /* Ocupa el 50% del ancho en pantallas medianas y grandes */
+  max-width: 100%;
+}
+
+/* Estilos adicionales para pantallas más pequeñas */
+@media (max-width: 767.98px) {
+  .ubicacion-info,
+  .embed-responsive-16by9 {
+      flex: 0 0 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+      max-width: 100%;
+      margin-right: 0; /* Elimina el margen entre la información y el mapa en pantallas pequeñas */
+  }
+}
+/* Estilos para horarios Antea */
+#horarios {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+#horarios:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid; /* Cambiado a border-top */
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+#horarios.ocultar:after {
+  transform: rotate(180deg);
+}
+
+#listaHorarios {
+  display: none;
+  list-style-type: none;
+  margin-top: 8px;
+  animation: fadein 0.5s;
+}
+
+#listaHorarios li {
+  margin-bottom: 8px;
+}
+
+/* Estilos para horarios Galerias */
+#horariosg {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+#horariosg:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid; /* Cambiado a border-top */
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+#horariosg.ocultar:after {
+  transform: rotate(180deg);
+}
+
+#listaHorariosg {
+  display: none;
+  list-style-type: none;
+  margin-top: 8px;
+  animation: fadein 0.5s;
+}
+
+#listaHorariosg li {
+  margin-bottom: 8px;
+}
+
+/* Estilos para el enlace del menú */
+#enlaceMenu {
+  text-decoration: none;
+  color: inherit; /* Usa el color del texto por defecto */
+  position: relative;
+}
+
+#enlaceMenu:hover {
+  text-decoration: none; /* Quita el subrayado al pasar el mouse */
+}
+
+#enlaceMenu:after {
+  content: '\1F37D'; /* Código Unicode para plato y cubiertos */
+  margin-left: 5px; /* Espacio entre el texto y el icono */
+}
+
+/* Estilos para el botón "Como llegar" */
+button {
+  cursor: pointer;
+  padding: 8px 40%; /* Ajusta el ancho para abarcar todo el tamaño del texto */
+  font-size: 20px; /* Ajusta el tamaño del texto */
+  background-color: #4caf50; /* Color verde */
+  color: #fff;
+  border: none;
+  position: relative;
+  border-radius: 10px; /* Agrega esquinas redondas */
+  transition: padding 0.3s ease; /* Agrega una transición para el desplazamiento del texto */
+}
+
+button:hover {
+  background-color: #45a049; /* Cambia el color al pasar el mouse */
+  padding-right: 35%; /* Ajusta el desplazamiento del texto al pasar el mouse */
+}
+
+button:before {
+  content: '\1F697'; /* Código Unicode para el icono de coche */
+  font-size: 24px; /* Ajusta el tamaño del icono */
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que no sea visible */
+  position: absolute; /* Absoluto para posicionar el icono en relación con el botón */
+  top: 40%; /* Coloca el icono a la mitad vertical del botón */
+  left: 35%; /* Coloca el icono a la izquierda del botón */
+  transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+  transition: opacity 0.3s ease; /* Agrega una transición suave para la opacidad */
+}
+
+button:hover:before {
+  opacity: 1; /* Hace que el icono sea visible al pasar el mouse */
+}
+
+/* Animación fadein */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+
