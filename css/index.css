@@ -1,6 +1,8 @@
 /* Define variables para colores y propiedades */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
 :root {
-  --background-color: #fff;
+  --background-color: #fbf6f6;
   /* Fondo con degradado */
   --header-color: #014c3f;
   /* Color de fondo del encabezado */
@@ -16,7 +18,7 @@
 body {
   text-align: center;
   /* Centra el texto horizontalmente */
-  font-family: sans-serif;
+  font-family: poppins;
   /* Fuente de texto predeterminada */
   background: var(--background-color);
   /* Usa el fondo con degradado definido en las variables */
@@ -37,6 +39,9 @@ header {
   /* Agrega margen en la parte inferior del header */
   transition: background-color 0.3s;
   /* Aplica una transición al color de fondo */
+}
+.contactos{
+  margin-top: 20px;
 }
 
 .logo {
@@ -151,7 +156,7 @@ main {
   /* Quita los bordes de los botones */
   font-size: 24px;
   /* Tamaño de fuente de los botones */
-  color: #014c3f;
+  color: #8fd5ca;
   /* Color de texto de los botones */
   cursor: pointer;
   /* Cambia el cursor al pasar por encima */
@@ -275,122 +280,3 @@ li a i {
 
 }
 
-/* Estilos para las cajas */
-.cajas a {
-  text-decoration: none;
-  /* Elimina el subrayado del enlace */
-  color: #000;
-  /* Cambia el color del texto a negro (puedes ajustar el color según tus preferencias) */
-  transition: color 0.3s;
-  /* Agrega una transición suave para el cambio de color */
-}
-
-/* Estilos para las cajas */
-.cajas .caja {
-  overflow: hidden;
-  /* Oculta el contenido que excede el tamaño de la caja */
-  position: relative;
-  /* Establece la posición relativa para posicionar el contenido */
-  transition: transform 0.3s;
-  /* Agrega una transición suave para el efecto de zoom */
-}
-
-/* Efecto de zoom al pasar el mouse sobre las cajas */
-.cajas .caja:hover {
-  transform: scale(1.1);
-  /* Aplica un zoom al 110% al pasar el mouse */
-}
-
-/* Estilos para las imágenes dentro de las cajas */
-.cajas img {
-  max-width: 100%;
-  /* Asegura que la imagen no supere el ancho de su contenedor */
-  transition: transform 0.3s;
-  /* Agrega una transición suave para el efecto de zoom */
-}
-
-/* Estilos para el texto dentro de las cajas */
-.cajas p {
-  position: absolute;
-  /* Establece la posición absoluta */
-  top: 0;
-  /* Coloca el texto en la parte superior */
-  left: 0;
-  /* Coloca el texto en la parte izquierda */
-  width: 100%;
-  /* Ocupa el ancho completo de la caja */
-  background: rgba(255, 255, 255, 0.7);
-  /* Fondo semi-transparente para mejorar la legibilidad */
-  padding: 10px;
-  /* Añade un pequeño espacio alrededor del texto */
-  margin: 0;
-  /* Elimina el margen predeterminado */
-  transition: background 0.3s;
-  /* Agrega una transición suave para el cambio de fondo */
-}
-
-/* Estilos para el texto al pasar el mouse sobre las cajas */
-.cajas .caja:hover p {
-  background: rgba(255, 255, 255, 0);
-  /* Hace el fondo completamente transparente al pasar el mouse */
-}
-
-/* Estilos para el botón "Como llegar" */
-button {
-  cursor: pointer;
-  padding: 8px 15%;
-  /* Ajusta el ancho para abarcar todo el tamaño del texto */
-  font-size: 20px;
-  /* Ajusta el tamaño del texto */
-  background-color: #4caf50;
-  /* Color verde */
-  color: #fff;
-  border: none;
-  position: relative;
-  border-radius: 10px;
-  /* Agrega esquinas redondas */
-  transition: padding 0.3s ease;
-  /* Agrega una transición para el desplazamiento del texto */
-}
-
-button:hover {
-  background-color: #45a049;
-  /* Cambia el color al pasar el mouse */
-  padding-right: 5%;
-  /* Ajusta el desplazamiento del texto al pasar el mouse */
-}
-
-button:before {
-  content: '\1F4CD';
-  /* Código Unicode para el icono de coche */
-  font-size: 24px;
-  /* Ajusta el tamaño del icono */
-  opacity: 0;
-  /* Inicialmente, establece la opacidad en 0 para que no sea visible */
-  position: absolute;
-  /* Absoluto para posicionar el icono en relación con el botón */
-  top: 40%;
-  /* Coloca el icono a la mitad vertical del botón */
-  left: 20%;
-  /* Coloca el icono a la izquierda del botón */
-  transform: translateY(-50%);
-  /* Ajusta para centrar verticalmente */
-  transition: opacity 0.3s ease;
-  /* Agrega una transición suave para la opacidad */
-}
-
-button:hover:before {
-  opacity: 1;
-  /* Hace que el icono sea visible al pasar el mouse */
-}
-
-/* Animación fadein */
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}

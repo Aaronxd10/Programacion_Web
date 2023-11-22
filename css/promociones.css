@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@100;300;400;500;600;700;800;900&display=swap');
+
+
 .contenido {
   display: flex;
   flex-wrap: wrap;
@@ -6,14 +10,24 @@
 }
 
 h2 {
-  font-family: sans-serif;
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px; /* Puedes ajustar el tamaño según tus preferencias */
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+h3 {
+  font-family: poppins;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
   width: 100%;
 }
 
 .promocion {
-  width: 300px; /* Ajusta el ancho según tus necesidades */
+  width: 360px; /* Ajusta el ancho según tus necesidades */
+  height: 550px;
   margin: 10px;
   padding: 15px;
   text-align: center;
@@ -23,12 +37,33 @@ h2 {
 
 .promocion:hover {
   transform: scale(1.1);
-  color: #FF5733;
+  color: rgb(196, 17, 17);
 }
 
 .promocion img {
   width: 100%;
   height: auto;
+}
+
+/* Ajusta el espacio entre la imagen y el texto */
+.promocion p {
+  margin-top: 10px; /* Puedes ajustar este valor según tus necesidades */
+}
+
+/* Estilo para los enlaces dentro de .promocion */
+.promocion a {
+  color: green;
+  text-decoration: none; /* Quita el subrayado */
+  transition: color 0.3s;
+}
+
+.promocion a:hover {
+  color: rgb(17, 184, 17);
+}
+
+/* Agrega una flecha antes del texto "Consulta aquí" */
+.promocion a::before {
+  content: '\00bb\00a0'; /* Código Unicode para una flecha (mayor) hacia la derecha y un espacio */
 }
 
 /* Asegura que el ajuste de tamaño se aplique correctamente en pantallas pequeñas */

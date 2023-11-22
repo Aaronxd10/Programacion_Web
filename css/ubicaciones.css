@@ -1,4 +1,17 @@
 /* Estilos para el contenedor de la ubicación */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@100;300;400;500;600;700;800;900&display=swap');
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px; /* Puedes ajustar el tamaño según tus preferencias */
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.contactos{
+  margin-top: 20px;
+}
 .col-lg-6 {
   display: flex;
   flex-wrap: wrap;
@@ -111,10 +124,9 @@
 }
 
 /* Estilos para el botón "Como llegar" */
-button {
+.ubicacion-info button {
   cursor: pointer;
   padding: 8px 40%; /* Ajusta el ancho para abarcar todo el tamaño del texto */
-  font-size: 20px; /* Ajusta el tamaño del texto */
   background-color: #4caf50; /* Color verde */
   color: #fff;
   border: none;
@@ -123,12 +135,12 @@ button {
   transition: padding 0.3s ease; /* Agrega una transición para el desplazamiento del texto */
 }
 
-button:hover {
+.ubicacion-info button:hover {
   background-color: #45a049; /* Cambia el color al pasar el mouse */
   padding-right: 35%; /* Ajusta el desplazamiento del texto al pasar el mouse */
 }
 
-button:before {
+.ubicacion-info button:before {
   content: '\1F697'; /* Código Unicode para el icono de coche */
   font-size: 24px; /* Ajusta el tamaño del icono */
   opacity: 0; /* Inicialmente, establece la opacidad en 0 para que no sea visible */
@@ -139,7 +151,7 @@ button:before {
   transition: opacity 0.3s ease; /* Agrega una transición suave para la opacidad */
 }
 
-button:hover:before {
+.ubicacion-info button:hover:before {
   opacity: 1; /* Hace que el icono sea visible al pasar el mouse */
 }
 
