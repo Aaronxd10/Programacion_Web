@@ -161,6 +161,37 @@ h2 {
   to   { opacity: 1; }
 }
 
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
 
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    margin-bottom: 8px;
+  }
+}
 
 
